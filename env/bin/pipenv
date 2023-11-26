@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' /home/shakil/Documents/Assesment/django-vuejs.zip-20231126T120925Z-001/django-vuejs/django-coding-test-vuejs/env/bin/python3.11 "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pipenv import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli())
